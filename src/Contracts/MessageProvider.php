@@ -12,7 +12,10 @@ declare(strict_types=1);
 
 namespace Hyperf\Utils\Contracts;
 
-interface Arrayable
+interface MessageProvider
 {
-    public function toArray(): array;
+    /**
+     * Get the messages for the instance.
+     */
+    public function getMessageBag(): MessageBag;
 }
