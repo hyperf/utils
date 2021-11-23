@@ -11,7 +11,8 @@ declare(strict_types=1);
  */
 namespace Hyperf\Utils\Contracts;
 
-interface Arrayable
+use Hyperf\Contract;
+
+interface Arrayable extends Contract\Arrayable
 {
-    public function toArray(): array;
 }
