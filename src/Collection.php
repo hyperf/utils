@@ -1643,6 +1643,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
      * @param TKey $key
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($key)
     {
         return array_key_exists($key, $this->items);
@@ -1665,6 +1666,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
      * @param null|TKey $key
      * @param TValue $value
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($key, $value)
     {
         if (is_null($key)) {
@@ -1679,6 +1681,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
      *
      * @param TKey $key
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($key)
     {
         unset($this->items[$key]);
