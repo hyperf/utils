@@ -17,6 +17,9 @@ use RuntimeException;
 
 use function Hyperf\Collection\collect;
 
+/**
+ * @deprecated since 3.1, use Hyperf\Support\Composer instead.
+ */
 class Composer
 {
     private static ?Collection $content = null;
